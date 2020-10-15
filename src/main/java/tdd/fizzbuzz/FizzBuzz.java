@@ -10,19 +10,19 @@ public class FizzBuzz {
     public static final int WHIZZ_SPECIAL_NUMBER = 7;
 
     public String countOff(int orderNumber) {
-        if(isModuloOf(orderNumber, FIZZ_SPECIAL_NUMBER)){
+        if(isMultipliableBy(orderNumber, FIZZ_SPECIAL_NUMBER)){
             return FIZZ;
         }
-        if(isModuloOf(orderNumber, BUZZ_SPECIAL_NUMBER)){
+        if(isMultipliableBy(orderNumber, BUZZ_SPECIAL_NUMBER)){
             return BUZZ;
         }
-        if(isModuloOf(orderNumber, WHIZZ_SPECIAL_NUMBER)){
+        if(isMultipliableBy(orderNumber, WHIZZ_SPECIAL_NUMBER)){
             return WHIZZ;
         }
         return String.valueOf(orderNumber);
     }
 
-    private boolean isModuloOf(int orderNumber, int i) {
+    private boolean isMultipliableBy(int orderNumber, int i) {
         return orderNumber % i == 0;
     }
 }
