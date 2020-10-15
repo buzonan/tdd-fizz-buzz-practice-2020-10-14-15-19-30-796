@@ -7,15 +7,19 @@ public class FizzBuzz {
     public static final String WHIZZ = "Whizz";
 
     public String countOff(int orderNumber) {
-        if(orderNumber%3 == 0){
+        if(isModuloOf(orderNumber, 3)){
             return FIZZ;
         }
-        if(orderNumber%5 == 0){
+        if(isModuloOf(orderNumber, 5)){
             return BUZZ;
         }
-        if(orderNumber%7 == 0){
+        if(isModuloOf(orderNumber, 7)){
             return WHIZZ;
         }
         return String.valueOf(orderNumber);
+    }
+
+    private boolean isModuloOf(int orderNumber, int i) {
+        return orderNumber % i == 0;
     }
 }
