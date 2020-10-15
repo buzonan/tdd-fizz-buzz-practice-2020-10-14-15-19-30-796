@@ -6,7 +6,7 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class FizzBuzzTest {
     @Test
-    void should_return_Fizz_when_number_modulo_3_given_3() {
+    void should_return_Fizz_when_count_off_given_order_number_3() {
         //Given
         int orderNumber = 3;
         FizzBuzz fizzBuzz = new FizzBuzz();
@@ -19,7 +19,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_return_Buzz_when_number_modulo_5_given_5() {
+    void should_return_Buzz_when_count_off_given_order_number_5() {
         //Given
         int orderNumber = 5;
         FizzBuzz fizzBuzz = new FizzBuzz();
@@ -32,7 +32,7 @@ public class FizzBuzzTest {
     }
 
     @Test
-    void should_return_Whizz_when_number_modulo_7_given_7() {
+    void should_return_Whizz_when_count_off_given_order_number_7() {
         //Given
         int orderNumber = 7;
         FizzBuzz fizzBuzz = new FizzBuzz();
