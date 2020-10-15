@@ -10,16 +10,17 @@ public class FizzBuzz {
     public static final int WHIZZ_SPECIAL_NUMBER = 7;
 
     public String countOff(int orderNumber) {
+        String studentShouldSay = "";
         if(isMultipliableBy(orderNumber, FIZZ_SPECIAL_NUMBER)){
-            return FIZZ;
+            studentShouldSay += FIZZ;
         }
         if(isMultipliableBy(orderNumber, BUZZ_SPECIAL_NUMBER)){
-            return BUZZ;
+            studentShouldSay += BUZZ;
         }
         if(isMultipliableBy(orderNumber, WHIZZ_SPECIAL_NUMBER)){
-            return WHIZZ;
+            studentShouldSay += WHIZZ;
         }
-        return String.valueOf(orderNumber);
+        return studentShouldSay.isEmpty() ? String.valueOf(orderNumber) : studentShouldSay;
     }
 
     private boolean isMultipliableBy(int orderNumber, int i) {
